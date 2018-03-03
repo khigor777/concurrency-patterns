@@ -12,7 +12,7 @@ func main() {
 			ch <- i
 			fmt.Println("after", i)
 		}
-		close(ch) //we mast close chanel if we want rea it with range
+		close(ch) //we must close chanel, if we want read it with range
 		fmt.Println("finsh write to chanel")
 
 	}(ch)
